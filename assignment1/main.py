@@ -138,8 +138,9 @@ plt.show()
 uniform_bins = np.zeros((100,100))
 for i in uniform:
     uniform_bins[int(i[0]/0.01)][int(i[1]/0.01)] = uniform_bins[int(i[0]/0.01)][int(i[1]/0.01)] + 1
-plt.imshow(uniform_bins)
+plt.imshow(uniform_bins,cmap = 'inferno')
 plt.title("2D Binning - Uniform")
+plt.legend()
 plt.xticks([])
 plt.yticks([])
 plt.show()
